@@ -1,30 +1,14 @@
 import {useState} from 'react'
 import Card from '../Cards/Card'
 import Result from '../Information/Result'
+import {startingPlayerChoices, cards} from '../../common/constants'
 
 const Game = props => {
   const {styling} = props
 
-  const startingPlayerChoices = {
-    playerOne: 'question',
-    playerTwo: 'question'
-  }
-
   const [playerChoices, setPlayerChoices] = useState(startingPlayerChoices)
 
   const playerId = Object.keys(playerChoices).find(player => playerChoices[player] === 'question')
-
-  const cards = {
-    rock: {
-      beats: 'scissors'
-    },
-    paper: {
-      beats: 'rock'
-    },
-    scissors: {
-      beats: 'paper'
-    }
-  }
 
   const playerCardChoiceHandler = player => {
     setPlayerChoices(prevState => {
