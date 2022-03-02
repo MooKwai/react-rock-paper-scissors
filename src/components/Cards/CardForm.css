@@ -1,0 +1,58 @@
+.card__controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    text-align: left;
+}
+
+.card__control label {
+    font-weight: bold;
+    margin: 0.5rem auto;
+    display: flex;
+}
+
+.card__control select {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 10rem;
+    max-width: 100%;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+    border-radius: 12px;
+}
+
+.card__wrapper button:hover,
+.card__wrapper button:active {
+    background-color: #510674;
+    border-color: #510674;
+}
+
+.card__wrapper button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.card__wrapper button:disabled,
+.card__wrapper button[disabled] {
+    color: #000000;
+    background-color: #cccccc;
+}
+
+.card-wrapper button.alternative:hover,
+.card-wrapper button.alternative:active {
+    background-color: #ddb3f8;
+}
