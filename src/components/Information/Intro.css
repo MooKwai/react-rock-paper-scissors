@@ -1,0 +1,15 @@
+.heading {
+    font-size: 2rem;
+}
+
+.instructions {
+    text-align: left;
+}
+
+.instructions li {
+    margin: 1rem;
+}
+
+.confirm__container {
+    margin-top: 2rem;
+}
